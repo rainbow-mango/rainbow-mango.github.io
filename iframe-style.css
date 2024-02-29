@@ -1,0 +1,271 @@
+* {
+    image-rendering: optimizeSpeed;
+    animation: fade 0.9s linear;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+html {
+    font-size: 1.2em;
+    height: 100%;
+    margin: 0;
+    background-position: center center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-family: monospace;
+}
+
+body {
+
+    width: auto;
+    margin: auto;
+    text-align: center;
+    background-position: center center;
+    justify-content: center;
+    vertical-align: middle;
+    min-width: 100%;
+    min-height: 100%;
+
+    
+    height: 100%;
+    
+}
+
+
+
+p {
+    text-align: center;
+    background-position: center center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.container{
+    margin-top: 80px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: monospace, cursive;
+    margin: auto;
+    width: fit-content;
+}
+
+
+.intro {
+    padding-top: 80px;
+}
+
+ul,
+li {
+    text-align: left;
+    justify-content: center;
+    vertical-align: left;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+
+.about-background {
+    background-image: url(https://rainbowmango.neocities.org/20190713_180152.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+
+    html {
+        color: #f1b265;
+
+
+    }
+
+    body {
+        background: #661f0a;
+        background-size: cover;
+    }
+
+    .container,
+    p {
+        background: #661f0a;
+    }
+
+    a:link,
+    a:visited {
+        color: #9ab074;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    a:hover {
+        color: #9ab074;
+        text-decoration: none;
+        text-decoration: underline;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 0;
+        background-position: center center;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        margin: auto;
+        height: 100%;
+        min-height: 100%;
+        background-size: cover;
+        overflow-y: scroll;
+        overflow-x: clip;
+    }
+
+    p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    
+    .intro {
+        padding-top: 80px;
+    }
+
+}
+
+/* iphone */
+@media only screen and (max-width: 500px) {
+
+    .intro {
+        padding-top: 50px;
+    }
+}
+
+/*dark mode*/
+@media (prefers-color-scheme: dark) {
+
+    html {
+        color: #9ab074;
+
+    }
+
+    body {
+        background: #1b1f15;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        background-image: -webkit-linear-gradient(left, #b44a1d, #a67e27, #58511b, #37383c, #3a2238);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #0000;
+        background-clip: text;
+
+    }
+
+    a:link,
+    a:visited {
+        color: #f1b265;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    a:hover {
+        color: #f1b265;
+        text-decoration: underline;
+    }
+}
+
+/*reduced-motion*/
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        background: black;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #0000;
+        background-clip: text;
+
+    }
+
+    a:link,
+    a:visited {
+        color: #000000;
+        text-decoration: underline;
+        width: 100%;
+    }
+
+    a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
+
+/*webkit*/
+@media only screen and (-webkit-min-device-pixel-ratio:0) {
+
+    .body-flex {
+        width: fit-content;
+    }
+
+}
+
+/* tiny phone */
+@media only screen and (max-width: 300px) {
+
+    body {
+        padding-top: 10px;
+
+    }
+}
